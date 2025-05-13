@@ -1,0 +1,21 @@
+{
+  "name": "my-threadsafe-filter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "napi build --release",
+    "test": "node index.js",
+    "profile": "samply record -- node index.js",
+    "profile:save": "samply record -o profile.json -- node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Native Rust filter with napi-rs. Use 'npm run profile' to profile with Samply.",
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4"
+  },
+  "napi": {
+    "name": "my-threadsafe-filter"
+  }
+}
